@@ -1109,7 +1109,7 @@ function WeddingInvitation() {
                   </motion.div>
                 </div>
               </section>
-              
+
               {/* Add Your Memories Section */}
               <section className="cv-auto py-24 md:py-32 bg-white relative overflow-hidden flex flex-col items-center border-t border-theme-100/50">
                 <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
@@ -1137,7 +1137,7 @@ function WeddingInvitation() {
                       <ExternalLink className="w-4 h-4 opacity-70" />
                       <span className="w-1.5 h-1.5 bg-white rotate-45 group-hover:scale-150 transition-transform" />
                     </button>
-                    
+
                     <div className="mt-16 flex items-center gap-3 opacity-40">
                       <div className="h-px w-8 bg-theme-300" />
                       <div className="w-1.5 h-1.5 rotate-45 bg-theme-400" />
