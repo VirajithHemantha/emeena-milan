@@ -1144,7 +1144,9 @@ function WeddingInvitation() {
                 <p className="text-[8px] md:text-[10px] uppercase tracking-[0.5em] text-stone-400 font-bold">
                   © 2026 Emeena & Milan. <span className="hidden md:inline">|</span><br className="md:hidden block mt-2" /> All rights reserved.
                 </p>
-
+                <p className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-stone-500 font-medium">
+                  Designed by Invitemint - 0707819074
+                </p>
               </footer>
             </div>
           </motion.div>
