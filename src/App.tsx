@@ -140,7 +140,7 @@ function FloatingPetals({ disabled = false }: { disabled?: boolean }) {
 }
 
 function CountdownTimer() {
-  const targetDate = new Date("May 18, 2026 09:55:00").getTime();
+  const targetDate = new Date("July 25, 2026 15:30:00").getTime();
   const [timeLeft, setTimeLeft] = useState(targetDate - Date.now());
 
   React.useEffect(() => {
@@ -201,13 +201,9 @@ function CountdownTimer() {
 
 function WeddingTimeline() {
   const schedule = [
-    { time: "09:30 AM", event: "Welcome Guests", icon: <Sparkles className="w-4 h-4" /> },
-    { time: "09:55 AM", event: "Poruwa Ceremony", icon: <Clock className="w-4 h-4" /> },
-    { time: "10:45 AM", event: "Registration", icon: <Sparkles className="w-4 h-4" /> },
-    { time: "11:30 AM", event: "Bar Open", icon: <Sparkles className="w-4 h-4" /> },
-    { time: "12:30 PM", event: "Buffet Open", icon: <Clock className="w-4 h-4" /> },
-    { time: "02:00 PM", event: "Dancing Floor Open", icon: <Sparkles className="w-4 h-4" /> },
-    { time: "03:30 PM", event: "Going Away", icon: <MapPin className="w-4 h-4" /> },
+    { time: "03:30 PM", event: "Wedding Mass at St. Mary's Church", icon: <Sparkles className="w-4 h-4" /> },
+    { time: "07:00 PM", event: "Reception at Grand Tower", icon: <Clock className="w-4 h-4" /> },
+    { time: "11:30 PM", event: "Celebration Concludes", icon: <MapPin className="w-4 h-4" /> },
   ];
 
   return (
@@ -270,7 +266,7 @@ function WeddingInvitation() {
   const [submitted, setSubmitted] = useState({ rsvp: false, wish: false });
 
   // IMPORTANT: Replace this with your actual Google Apps Script Web App URL
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw27GpF2TKE4l8yLdejrNk0HaEo_8GJjAUpsAvPEN2CPu-L7reajCuDRYRoHnwnwcS_/exec";
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwa4h72sTcUhXmTPj-W7IWUHhZIipoFdG2ly1IXVo2Xl0LsrSUeDrVOGCL2RYRaPaip/exec";
 
   const handleRSVPSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -410,10 +406,10 @@ function WeddingInvitation() {
                 {guestName ? "Specially For You" : "Save the Date"}
               </span>
               <h1 className="font-cinzel text-4xl md:text-5xl text-stone-800 mb-4 tracking-tight">
-                {guestName ? guestName : "Lakshani & Imalka"}
+                {guestName ? guestName : "Emeena & Milan"}
               </h1>
               <p className="text-stone-500 text-sm tracking-[0.2em] font-light">
-                {guestName ? "ARE CORDIALLY INVITED" : "MAY 18, 2026"}
+                {guestName ? "ARE CORDIALLY INVITED" : "JULY 25, 2026"}
               </p>
             </motion.div>
 
@@ -466,7 +462,7 @@ function WeddingInvitation() {
                 />
 
                 <div className="text-theme-100/30 rotate-90 whitespace-nowrap text-[10px] tracking-[0.55em] uppercase font-bold relative z-10">
-                  LAKSHANI & IMALKA
+                  EMEENA & MILAN
                 </div>
               </motion.div>
 
@@ -502,7 +498,7 @@ function WeddingInvitation() {
                 <div className="absolute inset-1.5 rounded-full border border-theme-600/40" />
                 <div className="absolute inset-3 rounded-full border border-theme-700/30" />
                 <div className="text-center relative z-10">
-                  <p className="font-cinzel text-[1.7rem] font-bold text-stone-800 leading-none">L&I</p>
+                  <p className="font-cinzel text-[1.7rem] font-bold text-stone-800 leading-none">E&M</p>
                   <div className="h-px w-12 bg-stone-400 mx-auto my-1.5" />
                   <p className="text-[8px] uppercase tracking-[0.35em] font-bold text-stone-600">Open</p>
                 </div>
@@ -553,7 +549,7 @@ function WeddingInvitation() {
                 transition={{ duration: 2, ease: "easeOut" }}
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-cinzel text-[40vw] text-theme-900 pointer-events-none whitespace-nowrap leading-none select-none z-0"
               >
-                L&I
+                E&M
               </motion.div>
 
               {/* Central Premium Arch Card */}
@@ -594,7 +590,7 @@ function WeddingInvitation() {
                       transition={{ delay: 1, duration: 0.8 }}
                       className="font-playball text-[3rem] sm:text-[3.5rem] md:text-[5.5rem] text-stone-800 leading-[1.1] drop-shadow-sm"
                     >
-                      Lakshani
+                      Emeena
                     </motion.h1>
                     <motion.div
                       initial={{ scale: 0 }}
@@ -610,7 +606,7 @@ function WeddingInvitation() {
                       transition={{ delay: 1.4, duration: 0.8 }}
                       className="font-playball text-[3rem] sm:text-[3.5rem] md:text-[5rem] text-stone-800 leading-[1.1] drop-shadow-sm"
                     >
-                      Imalka
+                      Milan
                     </motion.h1>
                   </div>
 
@@ -626,8 +622,8 @@ function WeddingInvitation() {
                       <div className="h-px w-full bg-gradient-to-l from-transparent via-theme-300 to-theme-400" />
                     </div>
                     <div className="font-cinzel space-y-1">
-                      <p className="text-2xl md:text-4xl text-stone-700 tracking-[0.2em] md:tracking-[0.3em] font-bold">18 MAY 2026</p>
-                      <p className="text-xs md:text-sm text-theme-600 tracking-[0.2em] uppercase font-bold">Puwakdeniya, Kegalle</p>
+                      <p className="text-2xl md:text-4xl text-stone-700 tracking-[0.2em] md:tracking-[0.3em] font-bold">25 JULY 2026</p>
+                      <p className="text-xs md:text-sm text-theme-600 tracking-[0.2em] uppercase font-bold">St. Mary's Church, Negombo</p>
                     </div>
                   </motion.div>
                 </div>
@@ -665,15 +661,41 @@ function WeddingInvitation() {
                       <>
                         <span className="text-theme-900 border-b border-theme-400 pb-1 mb-2 inline-block">{guestName}</span>
                         <br />
-                        you are cordially invited to celebrate the union of
+                        Warmly request your presence on the occasion of the marriage of our children
                       </>
                     ) : (
-                      "You are cordially invited to celebrate the union of"
+                      "Warmly request your presence on the occasion of the marriage of our children"
                     )}
                   </p>
                 </motion.div>
 
-
+                {/* Premium Cartoon Image Frame */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                  whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2, duration: 0.8 }}
+                  className="relative mx-auto my-8 md:my-12 w-[260px] h-[340px] md:w-[320px] md:h-[420px] z-20 group"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-theme-300 to-theme-500 rounded-t-[140px] md:rounded-t-[160px] rounded-b-2xl transform rotate-3 scale-[1.02] opacity-50 group-hover:rotate-6 transition-transform duration-700" />
+                  <div className="absolute inset-0 bg-white rounded-t-[140px] md:rounded-t-[160px] rounded-b-2xl shadow-2xl border-4 border-theme-100 overflow-hidden flex items-center justify-center p-2">
+                    <img
+                      src="/images/wedding_couple.png"
+                      alt="Wedding Couple"
+                      className="w-full h-full object-cover rounded-t-[130px] md:rounded-t-[150px] rounded-b-xl"
+                    />
+                  </div>
+                  {/* Decorative Elements */}
+                  <div className="absolute -bottom-4 -left-4 w-10 h-10 bg-theme-100 rounded-full shadow-lg border-2 border-white flex items-center justify-center z-20">
+                    <div className="w-2.5 h-2.5 rotate-45 bg-theme-500" />
+                  </div>
+                  <div className="absolute -bottom-4 -right-4 w-10 h-10 bg-theme-100 rounded-full shadow-lg border-2 border-white flex items-center justify-center z-20">
+                    <div className="w-2.5 h-2.5 rotate-45 bg-theme-500" />
+                  </div>
+                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-14 h-14 bg-white rounded-full shadow-md border-2 border-theme-200 flex items-center justify-center z-20 group-hover:-translate-y-2 transition-transform duration-500">
+                    <Sparkles className="w-6 h-6 text-theme-500" />
+                  </div>
+                </motion.div>
 
                 <div className="relative w-full flex flex-col md:flex-row items-center justify-center md:items-stretch gap-6 md:gap-10 my-12 md:my-20 z-10 px-2 lg:px-8">
 
@@ -689,9 +711,9 @@ function WeddingInvitation() {
                     <div className="relative z-10 space-y-4 py-8 md:py-12">
                       <div className="space-y-2">
                         <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">Beloved daughter of</p>
-                        <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">MR & MRS.Weerasinghe (Tharaka)</p>
+                        <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">Mr. K. D. L. S. Kumara &<br />Mrs. L. 1. De Livera</p>
                       </div>
-                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Lakshani</h3>
+                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Emeena</h3>
                     </div>
                   </motion.div>
 
@@ -723,9 +745,9 @@ function WeddingInvitation() {
                     <div className="relative z-10 space-y-4 py-8 md:py-12">
                       <div className="space-y-2">
                         <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">Beloved son of</p>
-                        <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">MR.& MRS.N.Senarathna (Thissa)</p>
+                        <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">Mr. K. M. U. C. Appuhamy &<br />Mrs. T. A. S. Luxmika</p>
                       </div>
-                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Imalka</h3>
+                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Milan</h3>
                     </div>
                   </motion.div>
                 </div>
@@ -743,7 +765,7 @@ function WeddingInvitation() {
                     <div className="flex flex-col items-center flex-1">
                       <Calendar className="w-6 h-6 md:w-8 md:h-8 text-theme-500 mb-4 opacity-80" />
                       <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone-400 font-bold mb-3">The Date</p>
-                      <p className="font-cinzel text-xl md:text-3xl text-theme-900 tracking-widest font-bold whitespace-nowrap">MONDAY, 18 MAY</p>
+                      <p className="font-cinzel text-xl md:text-3xl text-theme-900 tracking-widest font-bold whitespace-nowrap">SATURDAY, 25 JULY</p>
                       <p className="font-cinzel text-lg md:text-xl text-theme-600 tracking-[0.3em] font-normal mt-2">2026</p>
                     </div>
 
@@ -762,18 +784,18 @@ function WeddingInvitation() {
                     <div className="flex flex-col items-center flex-1">
                       <Clock className="w-6 h-6 md:w-8 md:h-8 text-theme-500 mb-4 opacity-80" />
                       <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone-400 font-bold mb-3">The Time</p>
-                      <p className="font-cinzel text-xl md:text-3xl text-theme-900 tracking-widest font-bold whitespace-nowrap">09:30 AM</p>
-                      <p className="font-cinzel text-xs md:text-sm text-theme-600 tracking-[0.2em] mt-3 uppercase">To 03:30 PM</p>
+                      <p className="font-cinzel text-xl md:text-3xl text-theme-900 tracking-widest font-bold whitespace-nowrap">03:30 PM</p>
+                      <p className="font-cinzel text-xs md:text-sm text-theme-600 tracking-[0.2em] mt-3 uppercase">To 11:30 PM</p>
                     </div>
                   </div>
 
                   <div className="pt-8 w-full px-4">
                     <div className="relative inline-flex items-center justify-center w-full max-w-md mx-auto group">
                       <div className="absolute inset-0 bg-theme-100 blur-lg opacity-40 group-hover:opacity-60 transition-opacity" />
-                      <p className="relative text-stone-900 bg-white shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] text-[9px] md:text-[11px] font-bold tracking-[0.3em] md:tracking-[0.4em] uppercase px-6 lg:px-10 py-4 lg:py-5 rounded-full border border-theme-300 flex items-center justify-center gap-4 w-full md:w-auto">
-                        <span className="w-1.5 h-1.5 rotate-45 bg-theme-500 shrink-0" />
-                        <span className="whitespace-nowrap">Poruwa Ceremony at 09:55 AM</span>
-                        <span className="w-1.5 h-1.5 rotate-45 bg-theme-500 shrink-0" />
+                      <p className="relative text-stone-900 bg-white shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] text-[9px] md:text-[11px] font-bold tracking-[0.3em] md:tracking-[0.4em] uppercase px-6 lg:px-10 py-4 lg:py-5 rounded-3xl md:rounded-full border border-theme-300 flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 w-full md:w-auto">
+                        <span className="hidden md:block w-1.5 h-1.5 rotate-45 bg-theme-500 shrink-0" />
+                        <span className="text-center md:whitespace-nowrap leading-relaxed">Wedding Mass at St. Mary's Church<br className="md:hidden" /> 3:30 PM</span>
+                        <span className="hidden md:block w-1.5 h-1.5 rotate-45 bg-theme-500 shrink-0" />
                       </p>
                     </div>
                   </div>
@@ -801,7 +823,8 @@ function WeddingInvitation() {
                     Forever
                   </div>
 
-                  <div className="flex items-center gap-4 md:gap-8 justify-center relative z-10 w-full mb-6 mt-4 opacity-70">
+
+                  <div className="flex items-center gap-4 md:gap-8 justify-center relative z-10 w-full mb-6 mt-8 opacity-70">
                     <div className="h-px w-16 md:w-32 bg-gradient-to-r from-transparent to-theme-400" />
                     <div className="w-1.5 h-1.5 rotate-45 bg-theme-500 shrink-0" />
                     <div className="h-px w-16 md:w-32 bg-gradient-to-l from-transparent to-theme-400" />
@@ -842,7 +865,7 @@ function WeddingInvitation() {
                         <span className="text-theme-600 font-bold uppercase tracking-[0.4em] text-[9px] md:text-[11px]">The Venue</span>
                       </div>
                       <h2 className="font-playball text-[3.5rem] sm:text-[4rem] md:text-[5.5rem] text-theme-900 leading-[1] drop-shadow-sm ml-[-4px]">
-                        Hotel Sleek Camelia
+                        Grand Tower Banquet Hall
                       </h2>
                     </div>
 
@@ -854,7 +877,7 @@ function WeddingInvitation() {
                           <MapPin className="w-4 h-4 text-theme-500" />
                         </div>
                         <p className="text-lg md:text-xl text-stone-700 font-cinzel font-medium leading-relaxed tracking-wide">
-                          No. 123, Puwakdeniya, Kegalle -<br /> Rambukkana Road, Karandupana.
+                          Negombo
                         </p>
                       </div>
 
@@ -865,7 +888,7 @@ function WeddingInvitation() {
 
                     <div className="pt-8 w-full md:w-auto">
                       <button
-                        onClick={() => window.open('https://maps.app.goo.gl/G8gETqwMaj2JjF4E6', '_blank')}
+                        onClick={() => window.open('https://www.google.com/maps/search/Grand+Tower+Banquet+Hall+Negombo', '_blank')}
                         className="w-full md:w-auto flex items-center justify-center gap-4 bg-theme-800 text-white px-10 py-5 rounded-full font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs hover:bg-theme-900 hover:shadow-xl hover:shadow-theme-900/20 transition-all duration-300 group"
                       >
                         <MapPin className="w-4 h-4 group-hover:-translate-y-1 transition-transform duration-300" />
@@ -886,7 +909,7 @@ function WeddingInvitation() {
                     {/* The Maps iframe */}
                     <div className="absolute inset-0 w-full h-full scale-[1.2] group-hover:scale-[1.15] transition-transform duration-[2s]">
                       <iframe
-                        src="https://maps.google.com/maps?q=Sleek%20Camellia%20Hotel%20Karandupana&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                        src="https://maps.google.com/maps?q=Grand%20Tower%20Banquet%20Hall%20Negombo&t=&z=14&ie=UTF8&iwloc=&output=embed"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
@@ -930,9 +953,13 @@ function WeddingInvitation() {
                     <div className="w-1.5 h-1.5 rotate-45 bg-theme-300" />
                     <div className="h-px w-16 md:w-24 bg-gradient-to-l from-transparent to-theme-300" />
                   </div>
-                  <p className="text-stone-300 text-sm md:text-base max-w-md mx-auto leading-relaxed mb-16 tracking-wide font-light">
-                    We would be absolutely thrilled to celebrate with you. Kindly respond by the end of April.
+                  <p className="text-stone-300 text-sm md:text-base max-w-md mx-auto leading-relaxed mb-8 tracking-wide font-light">
+                    We would be absolutely thrilled to celebrate with you. Kindly respond by July 10th.
                   </p>
+                  <div className="flex justify-center gap-8 mb-12 font-cinzel text-theme-200 text-sm font-bold">
+                    <p>Milan: 0723399990</p>
+                    <p>Emeena: 0776543785</p>
+                  </div>
 
                   {/* Premium RSVP Form */}
                   <div className="w-full bg-white/5 backdrop-blur-md p-6 sm:p-8 md:p-12 rounded-[2rem] border border-white/10 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.5)]">
@@ -1012,6 +1039,7 @@ function WeddingInvitation() {
             {/* Wishing Section and Footer Wrapper */}
             <div className="relative bg-[#faf9f6]">
               <div className="absolute inset-0 opacity-[0.03] paper-grain pointer-events-none" />
+
 
               <section className="cv-auto py-24 md:py-36 relative flex flex-col items-center overflow-hidden">
                 <InviteImage src={mandalaImage} alt="" className="absolute top-0 right-0 w-[40vw] max-w-[500px] opacity-[0.04] mix-blend-multiply translate-x-1/3 -translate-y-1/3 pointer-events-none" />
@@ -1094,7 +1122,7 @@ function WeddingInvitation() {
                         Thank You
                       </div>
                       <p className="text-[9px] md:text-[11px] uppercase tracking-[0.8em] text-theme-600 font-bold relative z-10 bg-[#faf9f6] px-6 py-2 rounded-full border border-theme-100/50 shadow-sm">With Love</p>
-                      <h3 className="font-playball text-[3.2rem] sm:text-6xl md:text-8xl text-theme-900 relative z-10 drop-shadow-sm px-4 pt-4 leading-none">Lakshani & Imalka</h3>
+                      <h3 className="font-playball text-[3.2rem] sm:text-6xl md:text-8xl text-theme-900 relative z-10 drop-shadow-sm px-4 pt-4 leading-none">Emeena & Milan</h3>
 
                       <motion.img
                         initial={{ opacity: 0, y: 24, scale: 0.95 }}
@@ -1110,47 +1138,11 @@ function WeddingInvitation() {
                 </div>
               </section>
 
-              {/* Add Your Memories Section */}
-              <section className="cv-auto py-24 md:py-32 bg-white relative overflow-hidden flex flex-col items-center border-t border-theme-100/50">
-                <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
-                <div className="container mx-auto px-4 max-w-4xl text-center relative z-10 w-full">
-                  <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="flex flex-col items-center"
-                  >
-                    <div className="w-16 h-16 bg-theme-50 rounded-full flex items-center justify-center text-theme-600 mb-8 border border-theme-100 shadow-sm">
-                      <Camera className="w-8 h-8" />
-                    </div>
-                    <span className="text-[10px] md:text-[12px] uppercase tracking-[0.5em] text-theme-600 font-bold mb-4 block">Captures Of Love</span>
-                    <h2 className="font-playball text-[3.5rem] md:text-[5rem] text-theme-900 leading-none mb-8">Add Your Memories</h2>
-                    <p className="text-stone-500 text-sm md:text-lg leading-relaxed max-w-xl mx-auto mb-12 font-light tracking-wide">
-                      Your perspective is unique! We'd be honored if you could share the photos and videos you captured during our special day.
-                    </p>
-                    <button
-                      onClick={() => window.open('https://drive.google.com/drive/folders/12gPGGMVN5GwrbBTbRlmlCd1AQzW3S7DX', '_blank')}
-                      className="inline-flex items-center gap-4 bg-theme-800 text-white px-12 py-5 rounded-full font-bold uppercase tracking-[0.3em] text-[10px] hover:bg-theme-900 hover:shadow-xl hover:shadow-theme-900/20 transition-all duration-300 group"
-                    >
-                      <span className="w-1.5 h-1.5 bg-white rotate-45 group-hover:scale-150 transition-transform" />
-                      Upload to Drive
-                      <ExternalLink className="w-4 h-4 opacity-70" />
-                      <span className="w-1.5 h-1.5 bg-white rotate-45 group-hover:scale-150 transition-transform" />
-                    </button>
-
-                    <div className="mt-16 flex items-center gap-3 opacity-40">
-                      <div className="h-px w-8 bg-theme-300" />
-                      <div className="w-1.5 h-1.5 rotate-45 bg-theme-400" />
-                      <div className="h-px w-8 bg-theme-300" />
-                    </div>
-                  </motion.div>
-                </div>
-              </section>
 
               {/* Footer */}
               <footer className="py-12 border-t border-theme-200/30 text-center relative z-10 space-y-3">
                 <p className="text-[8px] md:text-[10px] uppercase tracking-[0.5em] text-stone-400 font-bold">
-                  © 2026 Lakshani & Imalka. <span className="hidden md:inline">|</span><br className="md:hidden block mt-2" /> All rights reserved.
+                  © 2026 Emeena & Milan. <span className="hidden md:inline">|</span><br className="md:hidden block mt-2" /> All rights reserved.
                 </p>
 
               </footer>
