@@ -406,7 +406,7 @@ function WeddingInvitation() {
                 {guestName ? "Specially For You" : "Save the Date"}
               </span>
               <h1 className="font-cinzel text-4xl md:text-5xl text-stone-800 mb-4 tracking-tight">
-                {guestName ? guestName : "Milan & Emeena"}
+                {guestName ? guestName : "Emeena & Milan"}
               </h1>
               <p className="text-stone-500 text-sm tracking-[0.2em] font-light">
                 {guestName ? "ARE CORDIALLY INVITED" : "JULY 25, 2026"}
@@ -462,7 +462,7 @@ function WeddingInvitation() {
                 />
 
                 <div className="text-theme-100/30 rotate-90 whitespace-nowrap text-[10px] tracking-[0.55em] uppercase font-bold relative z-10">
-                  MILAN & EMEENA
+                  EMEENA & MILAN
                 </div>
               </motion.div>
 
@@ -590,7 +590,7 @@ function WeddingInvitation() {
                       transition={{ delay: 1, duration: 0.8 }}
                       className="font-playball text-[3rem] sm:text-[3.5rem] md:text-[5.5rem] text-stone-800 leading-[1.1] drop-shadow-sm"
                     >
-                      Milan
+                      Emeena
                     </motion.h1>
                     <motion.div
                       initial={{ scale: 0 }}
@@ -606,7 +606,7 @@ function WeddingInvitation() {
                       transition={{ delay: 1.4, duration: 0.8 }}
                       className="font-playball text-[3rem] sm:text-[3.5rem] md:text-[5rem] text-stone-800 leading-[1.1] drop-shadow-sm"
                     >
-                      Emeena
+                      Milan
                     </motion.h1>
                   </div>
 
@@ -710,10 +710,10 @@ function WeddingInvitation() {
                     <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
                     <div className="relative z-10 space-y-4 py-8 md:py-12">
                       <div className="space-y-2">
-                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">Beloved son of</p>
+                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">Beloved daughter of</p>
                         <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">Mr. K. M. U. C. Appuhamy &<br />Mrs. T. A. S. Luxmika</p>
                       </div>
-                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Milan</h3>
+                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Emeena</h3>
                     </div>
                   </motion.div>
 
@@ -744,10 +744,10 @@ function WeddingInvitation() {
                     <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
                     <div className="relative z-10 space-y-4 py-8 md:py-12">
                       <div className="space-y-2">
-                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">Beloved daughter of</p>
+                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">Beloved son of</p>
                         <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">Mr. K. D. L. S. Kumara &<br />Mrs. L. 1. De Livera</p>
                       </div>
-                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Emeena</h3>
+                      <h3 className="text-5xl md:text-7xl font-playball text-theme-800 group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Milan</h3>
                     </div>
                   </motion.div>
                 </div>
@@ -957,8 +957,8 @@ function WeddingInvitation() {
                     We would be absolutely thrilled to celebrate with you. Kindly respond by July 10th.
                   </p>
                   <div className="flex justify-center gap-8 mb-12 font-cinzel text-theme-200 text-sm font-bold">
-                    <p>Milan: 0723399990</p>
                     <p>Emeena: 0776543785</p>
+                    <p>Milan: 0723399990</p>
                   </div>
 
                   {/* Premium RSVP Form */}
@@ -1122,7 +1122,7 @@ function WeddingInvitation() {
                         Thank You
                       </div>
                       <p className="text-[9px] md:text-[11px] uppercase tracking-[0.8em] text-theme-600 font-bold relative z-10 bg-[#faf9f6] px-6 py-2 rounded-full border border-theme-100/50 shadow-sm">With Love</p>
-                      <h3 className="font-playball text-[3.2rem] sm:text-6xl md:text-8xl text-theme-900 relative z-10 drop-shadow-sm px-4 pt-4 leading-none">Milan & Emeena</h3>
+                      <h3 className="font-playball text-[3.2rem] sm:text-6xl md:text-8xl text-theme-900 relative z-10 drop-shadow-sm px-4 pt-4 leading-none">Emeena & Milan</h3>
 
                       <motion.img
                         initial={{ opacity: 0, y: 24, scale: 0.95 }}
@@ -1142,7 +1142,7 @@ function WeddingInvitation() {
               {/* Footer */}
               <footer className="py-12 border-t border-theme-200/30 text-center relative z-10 space-y-3">
                 <p className="text-[8px] md:text-[10px] uppercase tracking-[0.5em] text-stone-400 font-bold">
-                  © 2026 Milan & Emeena. <span className="hidden md:inline">|</span><br className="md:hidden block mt-2" /> All rights reserved.
+                  © 2026 Emeena & Milan. <span className="hidden md:inline">|</span><br className="md:hidden block mt-2" /> All rights reserved.
                 </p>
                 <p className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-stone-500 font-medium">
                   Designed by Invitemint - 0707819074
